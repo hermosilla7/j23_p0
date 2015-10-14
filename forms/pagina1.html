@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Formulario de alta</title>
+	</head>
+	<body>
+		<form action="pagina2.php" method="POST" enctype="multipart/form-data">			
+		Nombre de usuario<input type="text" name="nombre_usuario" size="18" maxlength="5" required><br/>
+			Contraseña <input type="password" name="clave" size="25"><br/>
+			<select name="ciudad_combo">
+        		<option value="Barcelona" selected>Barcelona</option>
+        		<option value="Madrid">Madrid</option>
+        		<option value="Orense">Orense</option>
+        		<option value="Zaragoza">Zaragoza</option>
+			</select>
+			<select name="aficiones[]" multiple>
+        		<option value="Musica" selected>Música</option>
+        		<option value="Deporte">Deporte</option>
+        		<option value="Cine">Cine</option>
+        		<option value="Coches">Coches</option>
+        	</select><br/><br/>
+			
+			<input type="checkbox" name="deporte[]" value="fútbol">Fútbol<br/>
+			<input type="checkbox" name="deporte[]" value="basquet">Basquet<br/><br/>
+
+			<input type="radio" name="sexo" value="Hombre">Hombre<br/>
+			<input type="radio" name="sexo" value="Mujer">Mujer<br/><br/>
+			
+			<textarea name="rollo" cols="15" rows="3"></textarea><br/>
+
+			Fecha de nacimiento<input type="date" name="fecha"><br/>
+			Email<input type="email" name="email" required><br/>
+			Telefono de contacto<input type="tel" name="telefono"><br>
+			Foto DNI:<input type="file" name="foto" value="foto"><br>
+			
+
+			<br/><br/>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+			<input type="button" onclick="alert('Versión 1.0')" value="?">
+			</form>
+	</body>
+</html>
